@@ -1,7 +1,13 @@
-<!-- 
-     page taken from 
+<!--
+     page taken from
      http://www.mediawiki.org/wiki/Extension:ShowRealUsernames/History
--->  
+-->
+== Version 1.3.0 ==
+
+=== Configuration changes ===
+
+* The messages are now stored in the [[mw:Localisation file format|new JSON format]].
+
 == Version 1.2.2 ==
 
 === Bug fixes ===
@@ -34,4 +40,3 @@ Even though the [[{{NAMESPACE}}:{{BASEPAGENAME}}#Configuration|Configuration]] o
 === Other changes ===
 
 * The code has been reviewed in order to comply more closely with the guidelines on mediawiki.org. In particular, it has been wrapped into a class.
-

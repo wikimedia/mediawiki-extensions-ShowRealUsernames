@@ -123,6 +123,12 @@ class ShowRealUsernames {
 		$query['fields'] += array_combine(
 			$wgShowRealUsernamesFields, $wgShowRealUsernamesFields );
 
+		$query['options']['GROUP BY'] = array_merge(
+			(array)$query['options']['GROUP BY'],
+			array_diff(
+				$wgShowRealUsernamesFields,
+				(array)$query['options']['GROUP BY'] ) );
+
 		return true;
 	}
 }

@@ -1,11 +1,7 @@
-<!-- 
-     page taken from 
+<!--
+     page taken from
      http://www.mediawiki.org/wiki/Extension:ShowRealUsernames/Release notes
--->  
+-->
 == Release notes ==
 
-These are the release notes for version 1.3.0. See [[{{NAMESPACE}}:{{BASEPAGENAME}}/History]] for older releases.
-
-=== Configuration changes ===
-
-* The messages are now stored in the [[mw:Localisation file format|new JSON format]].
+These are the release notes for version 1.4.0. See [[{{NAMESPACE}}:{{BASEPAGENAME}}/History]] for older releases.
