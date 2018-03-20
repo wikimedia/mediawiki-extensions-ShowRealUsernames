@@ -14,7 +14,7 @@
 	"MediaWiki": ">= 1.30.0"
     },
     "AutoloadClasses": {
-        "ShowRealUsernames": "ShowRealUsernames.body.php"
+        "ShowRealUsernames": "includes/ShowRealUsernames.php"
     },
     "ExtensionFunctions": [ "ShowRealUsernames::init" ],
     "MessagesDirs": {
