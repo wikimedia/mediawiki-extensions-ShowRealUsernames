@@ -1,7 +1,7 @@
 <?php
 
 # Not a valid entry point, skip unless MEDIAWIKI is defined
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
   echo "ShowRealUsernames: This is an extension to the MediaWiki package and cannot be run standalone.\n";
   die( -1 );
 }
@@ -25,7 +25,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
  * $wgShowRealUsernamesInline, @ref $wgShowRealUsernamesFields and the
  * @ref ShowRealUsernames.i18n.php "messages".
  *
- * @version 1.3.0
+ * @version 1.3.1
  *
  * @copyright [GPL-3.0+](https://gnu.org/licenses/gpl-3.0-standalone.html)
  *
@@ -118,7 +118,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'ShowRealUsernames',
 	'descriptionmsg' => 'sru-realname-desc',
-	'version' => '1.3.0',
+	'version' => '1.3.1',
 	'author' => array('Paul Lustgarten','John Erling Blad',
 		'[http://www.mediawiki.org/wiki/User:RV1971 RV1971]'),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:ShowRealUsernames'
@@ -140,5 +140,3 @@ $wgExtensionFunctions[] = 'ShowRealUsernames::init';
  */
 $wgExtensionMessagesFiles['ShowRealUsernames'] =
 	__DIR__ . '/ShowRealUsernames.i18n.php';
-
-?>
