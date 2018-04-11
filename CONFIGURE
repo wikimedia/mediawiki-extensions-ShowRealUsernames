@@ -1,7 +1,7 @@
-<!-- 
-     page taken from 
+<!--
+     page taken from
      http://www.mediawiki.org/wiki/Extension:ShowRealUsernames/Configuration
--->  
+-->
 ==Configuration==
 
 By default, the user's real name is appended to the wiki name in [[Special:ListUsers]]. You can replace the wiki name with the real name by setting
@@ -16,7 +16,7 @@ The fields retrieved from the database by the ShowRealUsernames extension are co
 
 The system messages <code>sru-realname-inline</code> and <code>sru-realname-append</code> are provided to format the name. Parameters ($1, $2, &hellip;) are replaced by the fields defined in <code>$wgShowRealUsernamesFields</code> in the order of definition.
 
-Only users having the ''showrealname'' right do see the real names. By default, this right is granted to all registered users. To restrict it to a group add something like the following lines to your <code>LocalSettings.php</code> ''after'' including the ShowRealUsernames extension:
+Only users having the ''showrealname'' right do see the real names. By default, this right is granted to all registered users. To restrict it to a group add something like the following lines to your <code>LocalSettings.php</code>:
 
 <syntaxhighlight lang="php">
 $wgGroupPermissions['user']['showrealname'] = false;
