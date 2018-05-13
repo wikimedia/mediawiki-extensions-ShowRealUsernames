@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Athena in Wonderland"
+		]
+	},
+	"right-showrealname": "Veja os nomes reais na [[Special:ListUsers|lista de utilizadores]]",
+	"sru-realname-desc": "Estende a página [[Special:ListUsers|Especial:ListaUtilizadores]] para mostrar o nome verdadeiro de cada utilizador, ou outras informações específicas do utilizador"
+}

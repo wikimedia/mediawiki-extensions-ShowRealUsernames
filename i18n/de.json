@@ -1,10 +1,12 @@
 {
-    "@metadata": {
-	"authors": [
-	    "Kghbln",
-	    "RV1971"
-	]
-    },
-    "right-showrealname": "B&uuml;rgerliche Namen sehen in der [[Special:ListUsers|Benutzerliste]]",
-    "sru-realname-desc": "Erweitert die Spezialseite [[Special:ListUsers]] um die Anzeige der b&uuml;rgerlichen Namen und/oder weiterer Daten der Benutzer"
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"RV1971",
+			"Metalhead64"
+		]
+	},
+	"right-showrealname": "B&uuml;rgerliche Namen in der [[Special:ListUsers|Benutzerliste]] ansehen",
+	"sru-realname-desc": "Erweitert die Spezialseite [[Special:ListUsers]] um die Anzeige der b&uuml;rgerlichen Namen und/oder weiterer Daten der Benutzer",
+	"sru-realname-append": "&nbsp;&ndash; $1"
 }

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda"
+		]
+	},
+	"right-showrealname": "[[Special:ListUsers|Özel:KullanıcıListesi]]'nde gerçek isimleri görün",
+	"sru-realname-desc": "Her bir kullanıcının gerçek adını ve/veya kullanıcıya özgü bilgileri de göstermek için [[Special:ListUsers|Özel:KullanıcıListesi]]'ni genişletir"
+}

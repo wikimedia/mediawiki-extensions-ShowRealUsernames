@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"right-showrealname": "Погледајте ги вистинските имиња во [[Special:ListUsers]]",
+	"sru-realname-desc": "Го додава [[Special:ListUsers]] за водно прикажување на вистинското име на корисниците и/или други кориснички информации"
+}
