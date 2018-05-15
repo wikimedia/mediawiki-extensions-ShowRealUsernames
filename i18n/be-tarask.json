@@ -4,5 +4,6 @@
 			"Red Winged Duck"
 		]
 	},
-	"right-showrealname": "Бачыць сапраўдныя імёны ў [[Special:ListUsers]]"
+	"right-showrealname": "Бачыць сапраўдныя імёны ў [[Special:ListUsers]]",
+	"sru-realname-desc": "Пашырае [[Special:ListUsers]], каб таксама паказваць сапраўднае імя кожнага ўдзельніка і/ці іншую дадатковую інфармацыю пра ўдзельнікаў"
 }
