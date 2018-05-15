@@ -26,30 +26,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  */
 
 class ShowRealUsernames {
-	/* public static methods */
-
-	/// Get an instance of this class.
-	public static function &singleton() {
-		static $instance;
-
-		if ( !isset( $instance ) ) {
-			$instance = new static;
-		}
-
-		return $instance;
-	}
-
-	/**
-	 * @brief Initialize this extension.
-	 */
-
-	public static function init() {
-		global $wgHooks;
-
-		$wgHooks['SpecialListusersQueryInfo'][] = self::singleton();
-
-		$wgHooks['SpecialListusersFormatRow'][] = self::singleton();
-	}
 
 	/**
 	 * @brief [SpecialListusersFormatRow]
@@ -62,12 +38,12 @@ class ShowRealUsernames {
 	 * &lt;li&gt;&lt;/li&gt; after the hook finishes. We assume that $item is
 	 * non-null and begins with an &lt;a&gt; element.
 	 *
-	 * @param $row Database row object.
+	 * @param stdClass $row Database row object.
 	 *
 	 * @return *bool* Always TRUE.
 	 */
 
-	public function onSpecialListusersFormatRow( &$item, $row ) {
+	public static function onSpecialListusersFormatRow( &$item, $row ) {
 		global $wgShowRealUsernamesFields;
 		global $wgShowRealUsernamesInline;
 		global $wgUser;
@@ -114,7 +90,7 @@ class ShowRealUsernames {
 	 * @return *bool* Always TRUE.
 	 */
 
-	public function onSpecialListusersQueryInfo( UsersPager $pager,
+	public static function onSpecialListusersQueryInfo( UsersPager $pager,
 		array &$query ) {
 
 		global $wgShowRealUsernamesFields;

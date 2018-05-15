@@ -16,9 +16,6 @@
 	"AutoloadClasses": {
 		"ShowRealUsernames": "includes/ShowRealUsernames.php"
 	},
-	"ExtensionFunctions": [
-		"ShowRealUsernames::init"
-	],
 	"MessagesDirs": {
 		"AddPersonalUrls": [
 			"i18n"
@@ -31,6 +28,10 @@
 		"user": {
 			"showrealname": true
 		}
+	},
+	"Hooks": {
+		"SpecialListusersFormatRow": "ShowRealUsernames::onSpecialListusersFormatRow",
+		"SpecialListusersQueryInfo": "ShowRealUsernames::onSpecialListusersQueryInfo"
 	},
 	"config": {
 		"ShowRealUsernamesInline": {
