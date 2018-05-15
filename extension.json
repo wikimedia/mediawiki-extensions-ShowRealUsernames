@@ -22,6 +22,9 @@
 	    "i18n"
 	]
     },
+	"AvailableRights": [
+		"showrealname"
+	],
     "GroupPermissions": {
         "user": { "showrealname": true }
     },
