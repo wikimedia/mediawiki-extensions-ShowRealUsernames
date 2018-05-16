@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nlemslu Phlyshi"
+			"Nlemslu Phlyshi",
+			"Orf3us"
 		]
 	},
-	"sru-realname-desc": "Utvider [[Spesial:Brukerliste]] til &aring; vise hver av brukernes virkelige namna"
+	"sru-realname-desc": "Utvider [[Spesiell:Brukerliste]] til å vise hver av brukernes virkelige navn"
 }
