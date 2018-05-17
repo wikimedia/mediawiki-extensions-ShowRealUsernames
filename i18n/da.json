@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nlemslu Phlyshi"
+			"Nlemslu Phlyshi",
+			"Jorn Ari"
 		]
 	},
-	"sru-realname-desc": "Udvider [[Speciel:Brugerliste]] til at vise hver af brugernes virkelige navne"
+	"sru-realname-desc": "Udvider [[Special:ListUsers]] til også at vise hver user&#8217;s rigtige navn og/eller andre bruger specifikke informationer"
 }
