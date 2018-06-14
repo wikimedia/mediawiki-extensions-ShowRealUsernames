@@ -4,5 +4,6 @@
 			"Robby"
 		]
 	},
-	"right-showrealname": "Déi richteg Nimm an de [[Special:ListUsers|Benotzerlësche]] kucken."
+	"right-showrealname": "Déi richteg Nimm an de [[Special:ListUsers|Benotzerlësche]] kucken.",
+	"sru-realname-desc": "Erweidert d'Spezialsäit [[Special:ListUsers]] esou datt och de richtegen Numm an/oder aner benotzer-spezifesch Informatioune gewise ginn."
 }
