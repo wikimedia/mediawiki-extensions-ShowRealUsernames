@@ -16,7 +16,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  *
  * @author Paul Lustgarten
  * @author John Erling Blad
- * @author [RV1971](http://www.mediawiki.org/wiki/User:RV1971)
+ * @author [RV1971](https://www.mediawiki.org/wiki/User:RV1971)
  */
 
 /**
@@ -29,7 +29,7 @@ class ShowRealUsernames {
 
 	/**
 	 * @brief [SpecialListusersFormatRow]
-	 * (http://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersFormatRow)
+	 * (https://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersFormatRow)
 	 * hook.
 	 *
 	 * Augment the display of a row to include the user's real name.
@@ -77,7 +77,7 @@ class ShowRealUsernames {
 
 	/**
 	 * @brief [SpecialListusersQueryInfo]
-	 * (http://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersQueryInfo)
+	 * (https://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersQueryInfo)
 	 * hook.
 	 *
 	 * Augment the DB query for each user to also fetch their real
