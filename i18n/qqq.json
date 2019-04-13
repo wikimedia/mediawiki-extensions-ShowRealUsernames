@@ -4,6 +4,7 @@
 			"RV1971"
 		]
 	},
+	"action-showrealname": "{{doc-action|showrealname}}\nRight to see real names in [[Special:ListUsers]].",
 	"right-showrealname": "{{doc-right|showrealname}}\nRight to see real names in [[Special:ListUsers]].",
 	"sru-realname-desc": "{{desc}}",
 	"sru-realname-inline": "HTML code used to format the user data which replaces the user name in [[Special:ListUsers]]. The parameters are replaced with the fields retrieved from the database, by default user_real_name, user_name, user_email.",
