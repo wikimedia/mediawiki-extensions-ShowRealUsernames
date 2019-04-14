@@ -6,5 +6,5 @@
 		]
 	},
 	"right-showrealname": "[[Special:ListUsers]]で利用者の実名を閲覧",
-	"sru-realname-desc": "[[Special:ListUsers]]を拡張してユーザーの実名と/あるいはユーザー固有の情報を表示する"
+	"sru-realname-desc": "[[Special:ListUsers]]を拡張して利用者の実名やその他の利用者固有の情報も表示する"
 }
