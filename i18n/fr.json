@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"RV1971",
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
+	"action-showrealname": "voir les vrais noms",
 	"right-showrealname": "Voir les noms réels des utilisateurs sur la [[Special:ListUsers|liste des utilisateurs]]",
 	"sru-realname-desc": "Ajoute les noms réels des utilisateurs et/ou éventuellement d'autres données personnelles à la page [[Special:ListUsers]]"
 }
