@@ -1,11 +1,5 @@
 <?php
 
-# Not a valid entry point, skip unless MEDIAWIKI is defined
-if ( !defined( 'MEDIAWIKI' ) ) {
-  echo "ShowRealUsernames: This is an extension to the MediaWiki package and cannot be run standalone.\n";
-  die( -1 );
-}
-
 /**
  * @brief Code for the @ref Extensions-ShowRealUsernames.
  *
