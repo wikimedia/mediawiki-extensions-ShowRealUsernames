@@ -38,12 +38,10 @@ class ShowRealUsernames {
 	 */
 
 	public static function onSpecialListusersFormatRow( &$item, $row ) {
-		global $wgShowRealUsernamesFields;
-		global $wgShowRealUsernamesInline;
-		global $wgUser;
+		global $wgShowRealUsernamesFields, $wgShowRealUsernamesInline;
 
 		if ( $row->user_real_name === ''
-			|| !$wgUser->isAllowed( 'showrealname' ) ) {
+			|| !RequestContext::getMain()->getUser()->isAllowed( 'showrealname' ) ) {
 			return true;
 		}
 
