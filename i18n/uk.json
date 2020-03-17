@@ -6,6 +6,6 @@
 		]
 	},
 	"action-showrealname": "перегляд справжніх імен користувачів",
-	"right-showrealname": "перегляд справжніх імен на [[Special:ListUsers]]",
+	"right-showrealname": "Перегляд справжніх імен на [[Special:ListUsers]]",
 	"sru-realname-desc": "Розширює сторінку [[Special:ListUsers]], щоб вона також показувала справжні імена користувачів та/або іншу релевантну інформацію про окремих користувачів"
 }
