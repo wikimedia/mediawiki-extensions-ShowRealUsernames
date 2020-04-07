@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jon Harald Søby",
 			"Nlemslu Phlyshi",
-			"Orf3us",
-			"Jon Harald Søby"
+			"Orf3us"
 		]
 	},
 	"action-showrealname": "se virkelige navn",
