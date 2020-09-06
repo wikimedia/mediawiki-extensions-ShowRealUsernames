@@ -28,15 +28,14 @@ class ShowRealUsernames {
 	 *
 	 * Augment the display of a row to include the user's real name.
 	 *
-	 * @param[in,out] &$item HTML to be returned. Will be wrapped in
+	 * @param string &$item HTML to be returned. Will be wrapped in
 	 * &lt;li&gt;&lt;/li&gt; after the hook finishes. We assume that $item is
 	 * non-null and begins with an &lt;a&gt; element.
 	 *
 	 * @param stdClass $row Database row object.
 	 *
-	 * @return *bool* Always TRUE.
+	 * @return bool Always TRUE.
 	 */
-
 	public static function onSpecialListusersFormatRow( &$item, $row ) {
 		global $wgShowRealUsernamesFields, $wgShowRealUsernamesInline;
 
@@ -45,12 +44,12 @@ class ShowRealUsernames {
 			return true;
 		}
 
-		$values = array();
+		$values = [];
 		foreach ( $wgShowRealUsernamesFields as $field ) {
 			$values[] = htmlspecialchars( $row->$field );
 		}
 
-		$m = array();
+		$m = [];
 		if ( preg_match( '/^(.*?<a\b[^>]*>)([^<]*)(<\/a\b[^>]*>)(.*)$/',
 				$item, $m ) ) {
 			if ( $wgShowRealUsernamesInline ) {
@@ -77,14 +76,12 @@ class ShowRealUsernames {
 	 *
 	 * @param UsersPager $pager The UsersPager instance.
 	 *
-	 * @param[in,out] array &$query The query array to be returned.
+	 * @param array &$query The query array to be returned.
 	 *
-	 * @return *bool* Always TRUE.
+	 * @return bool Always TRUE.
 	 */
-
 	public static function onSpecialListusersQueryInfo( UsersPager $pager,
 		array &$query ) {
-
 		global $wgShowRealUsernamesFields;
 
 		// Add extra fields, avoiding duplication.
