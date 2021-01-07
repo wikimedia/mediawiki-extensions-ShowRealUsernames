@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @brief Code for the @ref Extensions-ShowRealUsernames.
+ * Code for the @ref Extensions-ShowRealUsernames.
  *
  * @file
  *
@@ -14,7 +14,7 @@
  */
 
 /**
- * @brief Class implementing the @ref Extensions-ShowRealUsernames.
+ * Class implementing the @ref Extensions-ShowRealUsernames.
  *
  * @ingroup Extensions-ShowRealUsernames
  */
@@ -22,9 +22,8 @@
 class ShowRealUsernames {
 
 	/**
-	 * @brief [SpecialListusersFormatRow]
-	 * (https://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersFormatRow)
-	 * hook.
+	 * SpecialListusersFormatRow hook handler
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersFormatRow
 	 *
 	 * Augment the display of a row to include the user's real name.
 	 *
@@ -67,9 +66,8 @@ class ShowRealUsernames {
 	}
 
 	/**
-	 * @brief [SpecialListusersQueryInfo]
-	 * (https://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersQueryInfo)
-	 * hook.
+	 * SpecialListusersQueryInfo hook handler
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/SpecialListusersQueryInfo
 	 *
 	 * Augment the DB query for each user to also fetch their real
 	 * name and/or other fields.
