@@ -13,6 +13,8 @@
  * @author [RV1971](https://www.mediawiki.org/wiki/User:RV1971)
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Class implementing the @ref Extensions-ShowRealUsernames.
  *
@@ -36,28 +38,32 @@ class ShowRealUsernames {
 	 * @return bool Always TRUE.
 	 */
 	public static function onSpecialListusersFormatRow( &$item, $row ) {
-		global $wgShowRealUsernamesFields, $wgShowRealUsernamesInline;
+		$context = RequestContext::getMain();
 
 		if ( $row->user_real_name === ''
-			|| !RequestContext::getMain()->getUser()->isAllowed( 'showrealname' ) ) {
+			|| !$context->getUser()->isAllowed( 'showrealname' ) ) {
 			return true;
 		}
 
+		$showRealUsernamesFields = $context->getConfig()->get( 'ShowRealUsernamesFields' );
+		$showRealUsernamesInline = $context->getConfig()->get( 'ShowRealUsernamesInline' );
+
 		$values = [];
-		foreach ( $wgShowRealUsernamesFields as $field ) {
+		foreach ( $showRealUsernamesFields as $field ) {
 			$values[] = htmlspecialchars( $row->$field );
 		}
 
 		$m = [];
 		if ( preg_match( '/^(.*?<a\b[^>]*>)([^<]*)(<\/a\b[^>]*>)(.*)$/',
 				$item, $m ) ) {
-			if ( $wgShowRealUsernamesInline ) {
+			$fields = implode( $context->msg( 'pipe-separator' )->text(), $values );
+			if ( $showRealUsernamesInline ) {
 				$item = $m[1]
-					. wfMessage( 'sru-realname-inline', $values )->text()
+					. $context->msg( 'sru-realname-inline', $fields )->text()
 					. "{$m[3]}{$m[4]}";
 			} else {
 				$item = "{$m[1]}{$m[2]}{$m[3]}"
-					. wfMessage( 'sru-realname-append', $values )->text()
+					. $context->msg( 'sru-realname-append', $fields )->text()
 					. $m[4];
 			}
 		}
@@ -78,18 +84,17 @@ class ShowRealUsernames {
 	 *
 	 * @return bool Always TRUE.
 	 */
-	public static function onSpecialListusersQueryInfo( UsersPager $pager,
-		array &$query ) {
-		global $wgShowRealUsernamesFields;
+	public static function onSpecialListusersQueryInfo( UsersPager $pager, array &$query ) {
+		$config = MediaWikiServices::getInstance()->getMainConfig();
+		$showRealUsernamesFields = $config->get( 'ShowRealUsernamesFields' );
 
-		// Add extra fields, avoiding duplication.
-		$query['fields'] += array_combine(
-			$wgShowRealUsernamesFields, $wgShowRealUsernamesFields );
+		// Add extra fields.
+		$query['fields'] += array_combine( $showRealUsernamesFields, $showRealUsernamesFields );
 
 		$query['options']['GROUP BY'] = array_merge(
 			(array)$query['options']['GROUP BY'],
 			array_diff(
-				$wgShowRealUsernamesFields,
+				$showRealUsernamesFields,
 				(array)$query['options']['GROUP BY'] ) );
 
 		return true;
