@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Gito da Ana"
 		]
 	},
 	"action-showrealname": "ver nomes reais",
 	"right-showrealname": "Veja nomes reais em [[Special:ListUsers]]",
-	"sru-realname-desc": "Estende [[Special:ListUsers]] para mostrar também o nome real de cada usuário e/ou outras informações específicas do usuário"
+	"sru-realname-desc": "Mwatalele[[Special:ListUsers]] wí oniherye tho Nsina nekekhayi na khuta namarumeela ni/ wala mithaka sikina sa namarumeela"
 }
