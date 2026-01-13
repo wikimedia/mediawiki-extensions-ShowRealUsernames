@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
 	"action-showrealname": "se riktiga namn",
-	"right-showrealname": "Se riktiga namn i [[Special:ListUsers]]"
+	"right-showrealname": "Se riktiga namn i [[Special:ListUsers]]",
+	"sru-realname-desc": "Utökar [[Special:ListUsers]] till att även visa varje användares riktiga namn och/eller annan användarspecifik information"
 }
